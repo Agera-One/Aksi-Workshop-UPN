@@ -1,0 +1,66 @@
+.navbar {
+  background: transparent;
+  backdrop-filter: blur(200px);
+  background-color: rgba(255,255,255, .04);
+  margin-top: 2rem;
+}
+
+.logo {
+  width: 4rem;
+}
+
+.navbar-nav {
+  position: relative;
+  right: -12rem;
+}
+
+.navbar-toggler {
+    font-size: 1.2rem;
+    border: none;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.hero-section {
+  margin-top: 9rem;
+}
+
+.hero-section .name {
+  font-size: 3rem;
+}
+
+.hero-section .profession {
+  color: #1DDFDC;
+}
+
+.hero-section .button button {
+  width: 7rem;
+  border: none;
+}
+
+@media (min-width: 1400px ) {
+  .navbar {
+    width: 50rem;
+  }
+}
+
+@media (max-width: 1400px ) {
+  .navbar {
+    width: 43rem;
+  }
+}
+
+@media (max-width: 992px ) {
+  .navbar {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 768px ) {
+  .navbar {
+    width: 30rem;
+  }
+}
