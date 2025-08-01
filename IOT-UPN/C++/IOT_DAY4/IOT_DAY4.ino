@@ -1,6 +1,7 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 #include <WiFiClient.h>
+#include "secrets.h"
 
 
 // ==== WiFi Configuration ====
@@ -64,12 +65,12 @@ void kirimTelegram(String pesan) {
 
 
     HTTPClient https;
-    String token = "8279818738:AAG3hM9aFalHa6hx7RxcvRgWT75VPlNMY7I";  // Ganti token bot Anda
-    String chat_id = "7916170002"; // Ganti chat_id Anda
+    String token = "BOT_TOKEN";  // Ganti token bot Anda
+    String chat_id = "CHAT_ID"; // Ganti chat_id Anda
 
 
-    String url = "https://api.telegram.org/bot" + token + "/sendMessage";
-    String postData = "chat_id=" + chat_id + "&text=" + pesan;
+    String url = "https://api.telegram.org/bot" + String(BOT_TOKEN) + "/sendMessage";
+    String postData = "chat_id=" + String(CHAT_ID) + "&text=" + pesan;
 
 
     https.begin(client, url);
