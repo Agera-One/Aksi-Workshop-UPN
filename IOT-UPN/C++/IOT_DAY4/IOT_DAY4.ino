@@ -32,7 +32,7 @@ void kirimKeServer(float distance) {
     HTTPClient http;
 
 
-    http.begin(client, "http://192.168.27.160/iot_day4/php/insert.php"); // sesuaikan IP
+    http.begin(client, "http://192.168.27.160/PHP/iot_day4/php/insert.php"); // sesuaikan IP
     http.addHeader("Content-Type", "application/x-www-form-urlencoded");
 
 
